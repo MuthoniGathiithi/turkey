@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Turkey Trends Clothing Store</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -112,7 +117,22 @@ footer .wrap span:last-child{color:var(--gold-lt)}
   .fact{grid-template-columns:minmax(0,1fr);gap:4px}
 }
 @media (prefers-reduced-motion:reduce){.item img{transition:none}.item:hover img{transform:none}}
+@media (max-width:520px){
+  .hero .wrap{padding-block:32px 40px;gap:28px}
+  .hero p{font-size:16px}
+  .cta .btn{flex:1 1 auto;justify-content:center}
+  .shop .wrap,.how .wrap,.visit .wrap{padding-block:48px}
+  .chips{overflow-x:auto;flex-wrap:nowrap;max-width:100%;padding-bottom:4px}
+  .chip{flex:none}
+  .strip .wrap{justify-content:flex-start;font-size:11px;gap:8px 18px}
+  .logo b{font-size:16px}.crest{width:32px;height:32px;font-size:17px}
+}
+html,body{overflow-x:hidden}
+img{max-width:100%}
 </style>
+</head>
+<body>
+
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></symbol>
@@ -241,3 +261,6 @@ document.getElementById("copyBtn").addEventListener("click",function(){
   function selectPhone(){const r=document.createRange();r.selectNodeContents(document.getElementById("phone"));const s=getSelection();s.removeAllRanges();s.addRange(r);}
 });
 </script>
+
+</body>
+</html>
